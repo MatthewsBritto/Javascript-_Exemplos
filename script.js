@@ -84,3 +84,53 @@ FOR + IN= imprime número do index
 For (var i in vetor)
 FOR + OF = imprime dado real da posição do index
 For (var i of vetor) */
+
+// ----------Objetos-----------
+
+//Uma propriedade de um objeto pode receber um valor de qualquer tipo que vimos, Arrays e até outro objeto...
+
+
+/*console.log(aluno.nome)
+cnsole.log(aluno.notas[1])
+console.log(aluno.contato.email)*/
+
+//Os métodos JavaScript são ações que podem ser executadas em objetos,  é uma propriedade que contém uma definição de uma função . Em um método de objeto, "this" refere-se ao valor da propriedade.
+
+//this é a palavra-chave. refere-se a propriedade do objeto ao qual pertence.
+
+/*function calcMedia() {
+    return ( this.notas[0] + this.notas[1] ) / 2 ;
+}
+
+var aluno = {
+    nome:"Caio",
+    notas:[8.5,9.0],
+    media:calcMedia
+    
+}
+var aluno2 = {
+    nome:"Pedro",
+    notas:[7.5,10.0],
+    media :calcMedia 
+    
+}
+
+console.log(aluno.nome)
+console.log(aluno.media());
+console.log(aluno2.nome)
+console.log(aluno2.media());*/
+
+// ----------- Outra maneira de fazer
+
+/*function aluno(nome, n1, n2){
+    this.nome = nome;
+    this.nota1 = n1 ;
+    this.nota2 = n2;
+
+    this.media = function () {
+        return (this.nota1 + this.nota2 ) / 2;
+    }
+}
+
+var a = new aluno("Igor", 8 , 7); 
+console.log(a.nome,a.media());*/
